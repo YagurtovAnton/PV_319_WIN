@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using System.Windows.Forms;
 
 namespace Clock
 {
@@ -17,6 +19,27 @@ namespace Clock
 		{
 
 		}
+
+		public Alarm(DateTime date, TimeSpan time, Week weekdays, string filename, string message)
+		{
+			this.Date = date;
+			this.Time = time;
+			this.Weekdays = weekdays;
+			this.Filename = filename;
+			this.Message = message;
+		Console.WriteLine($"Costractor:{this.GetHashCode()}");
+		}
+		
+		public Alarm(Alarm other)
+		{
+			this.Date = other.Date;
+			this.Time = other.Time;
+			this.Weekdays = other.Weekdays;
+			this.Filename = other.Filename;
+			this.Message = other.Message;
+			Console.WriteLine($"Costractor:{this.GetHashCode()}");
+		}
+
 		public override string ToString()
 		{
 			string info = "";
