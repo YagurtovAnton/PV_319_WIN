@@ -42,11 +42,25 @@ namespace Clock
 
 		private void lbAlarms_DoubleClick(object sender, EventArgs e)
 		{
-			addAlarm.Alarm = lbAlarms.SelectedItem as Alarm;
-			if (addAlarm.ShowDialog() == DialogResult.OK)
+			if(lbAlarms.Items.Count > 0)
 			{
-				lbAlarms.Items[lbAlarms.SelectedIndex] = addAlarm.Alarm;
+				addAlarm.Alarm = lbAlarms.SelectedItem as Alarm;
+				if (addAlarm.ShowDialog() == DialogResult.OK)
+				{
+					lbAlarms.Items[lbAlarms.SelectedIndex] = addAlarm.Alarm;
+				}
 			}
+			else btnAdd_Click(sender, e);	
+		}
+
+		private void btnDelete_Click(object sender, EventArgs e)
+		{
+			lbAlarms.Items.Remove(lbAlarms.SelectedIndex);
+		}
+
+		private void lbAlarms_KeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.KeyCode == Keys.Enter) btnDelete_Click(sender, e);
 		}
 	}
 }

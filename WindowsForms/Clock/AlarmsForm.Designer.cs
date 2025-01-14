@@ -43,6 +43,7 @@
 			this.lbAlarms.Name = "lbAlarms";
 			this.lbAlarms.Size = new System.Drawing.Size(573, 324);
 			this.lbAlarms.TabIndex = 0;
+			this.lbAlarms.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lbAlarms_KeyDown);
 			// 
 			// btnOK
 			// 
@@ -75,6 +76,7 @@
 			this.btnDelete.TabIndex = 3;
 			this.btnDelete.Text = "Delete";
 			this.btnDelete.UseVisualStyleBackColor = true;
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
 			// AlarmsForm
 			// 
