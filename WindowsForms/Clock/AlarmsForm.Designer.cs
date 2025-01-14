@@ -37,26 +37,30 @@
 			// lbAlarms
 			// 
 			this.lbAlarms.FormattingEnabled = true;
-			this.lbAlarms.Location = new System.Drawing.Point(13, 13);
+			this.lbAlarms.ItemHeight = 16;
+			this.lbAlarms.Location = new System.Drawing.Point(17, 16);
+			this.lbAlarms.Margin = new System.Windows.Forms.Padding(4);
 			this.lbAlarms.Name = "lbAlarms";
-			this.lbAlarms.Size = new System.Drawing.Size(431, 264);
+			this.lbAlarms.Size = new System.Drawing.Size(573, 324);
 			this.lbAlarms.TabIndex = 0;
 			// 
 			// btnOK
 			// 
 			this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.btnOK.Location = new System.Drawing.Point(450, 13);
+			this.btnOK.Location = new System.Drawing.Point(600, 16);
+			this.btnOK.Margin = new System.Windows.Forms.Padding(4);
 			this.btnOK.Name = "btnOK";
-			this.btnOK.Size = new System.Drawing.Size(75, 23);
+			this.btnOK.Size = new System.Drawing.Size(100, 28);
 			this.btnOK.TabIndex = 1;
 			this.btnOK.Text = "OK";
 			this.btnOK.UseVisualStyleBackColor = true;
 			// 
 			// btnAdd
 			// 
-			this.btnAdd.Location = new System.Drawing.Point(451, 43);
+			this.btnAdd.Location = new System.Drawing.Point(601, 53);
+			this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
 			this.btnAdd.Name = "btnAdd";
-			this.btnAdd.Size = new System.Drawing.Size(75, 23);
+			this.btnAdd.Size = new System.Drawing.Size(100, 28);
 			this.btnAdd.TabIndex = 2;
 			this.btnAdd.Text = "Add";
 			this.btnAdd.UseVisualStyleBackColor = true;
@@ -64,23 +68,25 @@
 			// 
 			// btnDelete
 			// 
-			this.btnDelete.Location = new System.Drawing.Point(450, 73);
+			this.btnDelete.Location = new System.Drawing.Point(600, 90);
+			this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
 			this.btnDelete.Name = "btnDelete";
-			this.btnDelete.Size = new System.Drawing.Size(75, 23);
+			this.btnDelete.Size = new System.Drawing.Size(100, 28);
 			this.btnDelete.TabIndex = 3;
 			this.btnDelete.Text = "Delete";
 			this.btnDelete.UseVisualStyleBackColor = true;
 			// 
 			// AlarmsForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(537, 296);
+			this.ClientSize = new System.Drawing.Size(716, 364);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnAdd);
 			this.Controls.Add(this.btnOK);
 			this.Controls.Add(this.lbAlarms);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "AlarmsForm";
 			this.Text = "Alarms";
 			this.ResumeLayout(false);
